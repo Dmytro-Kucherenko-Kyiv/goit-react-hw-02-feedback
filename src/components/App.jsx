@@ -1,8 +1,31 @@
+import React from "react";
 import { Component } from "react";
+import { ButtonList } from "./Buttons/buttons";
+import { StatisticsList } from "./Statistics/statistics";
+
 
 
 export class App extends Component {
+
+  state = {
+  good: 0,
+  neutral: 0,
+  bad: 0
+  }
+  
+/*   onLeaveFeedback = e => {
+
+  }
+
+  countTotalFeedback = e => {
+    
+  } */
+
   render() {
+
+    const { good, neutral, bad } = this.state;
+
+
     return (
       <div
         style={{
@@ -13,30 +36,20 @@ export class App extends Component {
           fontSize: 40,
           color: '#010101'
         }}
-
-        state={{
-          good: 0,
-          neutral: 0,
-          bad: 0
-        }}
       >
         <div>
+          <>
+            <h3>Please leave feedback</h3>
+            <ButtonList
+              good={good}
+              neutral={neutral}
+              bad={bad} />
+          </>
 
-          <h1>Please leave feedback</h1>
-
-          <div>
-            <button>Good</button>
-            <button>Neutral</button>
-            <button>Bad</button>
-          </div>
-
-          <div>
-            <ul>
-              <li>Good:</li>
-              <li>Neutral:</li>
-              <li>Bad:</li>
-            </ul>
-          </div>
+          <>
+          <h3>Statistics</h3>     
+          <StatisticsList/>
+          </>
 
         </div>
       </div>
