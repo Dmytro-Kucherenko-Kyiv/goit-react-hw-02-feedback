@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import { Bad, Good, List, Neutral, Positive, Total } from './Statistics.styled';
+import { ThemeContext } from 'styled-components';
 
 export const Statistics = ({
   good,
@@ -8,13 +10,13 @@ export const Statistics = ({
   positivePercentage }) => {
 
   return (
-    <ul>
-      <li>Good: {good}</li>
-      <li>Neutral: {neutral}</li>
-      <li>Bad: {bad}</li>
-      <li>Total: {total()}</li>
-      <li>Positive feedback: {positivePercentage()}</li>
-    </ul>
+    <List>
+      <Good>Good: {good}</Good>
+      <Neutral>Neutral: {neutral}</Neutral>
+      <Bad>Bad: {bad}</Bad>
+      <Total>Total: {total()}</Total>
+      <Positive>Positive feedback: {positivePercentage()}%</Positive>
+    </List>
   )
 };
 

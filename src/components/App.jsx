@@ -44,7 +44,8 @@ export class App extends Component {
           justifyContent: 'center',
           alignItems: 'center',
           fontSize: 40,
-          color: '#010101'
+          color: '#010101',
+          backgroundColor: '#c3f5bf'
         }}
       >
         <div>
