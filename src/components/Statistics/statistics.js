@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { Bad, Good, List, Neutral, Positive, Total } from './Statistics.styled';
-import { ThemeContext } from 'styled-components';
 
 export const Statistics = ({
   good,
