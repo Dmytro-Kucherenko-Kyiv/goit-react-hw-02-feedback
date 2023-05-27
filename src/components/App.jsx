@@ -3,7 +3,7 @@ import { Component } from "react";
 import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
 import { Section } from "./Section/Section";
 import { Notification } from "./Notification/Notification";
-import { Name } from "./Name/Name";
+import { Statistics } from "./Statistics/Statistics";
 
 export class App extends Component {
   constructor(props) {
@@ -59,7 +59,7 @@ export class App extends Component {
           <Section title="Statistics" >
             {this.countTotalFeedback() !== 0 ? 
             
-            <Name
+            <Statistics
                 good={good}
                 neutral={neutral}
                 bad={bad}
