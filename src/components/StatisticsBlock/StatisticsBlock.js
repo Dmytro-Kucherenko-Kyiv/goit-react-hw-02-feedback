@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Bad, Good, List, Neutral, Positive, Total } from './Statistics.styled';
+import { Bad, Good, List, Neutral, Positive, Total } from './StatisticsBlock.styled';
 
 export const Statistics = ({
   good,
