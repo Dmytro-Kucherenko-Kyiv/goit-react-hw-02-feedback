@@ -1,9 +1,9 @@
 import React from "react";
 import { Component } from "react";
 import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
-import { Statistics } from "./Statistics/Statistics";
 import { Section } from "./Section/Section";
 import { Notification } from "./Notification/Notification";
+import { Name } from "./Name/Name";
 
 export class App extends Component {
   constructor(props) {
@@ -59,7 +59,7 @@ export class App extends Component {
           <Section title="Statistics" >
             {this.countTotalFeedback() !== 0 ? 
             
-            <Statistics
+            <Name
                 good={good}
                 neutral={neutral}
                 bad={bad}
